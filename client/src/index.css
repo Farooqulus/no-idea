@@ -864,3 +864,14 @@ body { background:var(--deep); }
 @keyframes orbit-pulse { 0%,100% { transform:translate(-50%,-50%) scale(.92); opacity:.7; } 50% { transform:translate(-50%,-50%) scale(1.08); opacity:1; } }
 @media (max-width:900px) { .workspace-section,.platform-shell .people-section { grid-template-columns:1fr; gap:50px; padding:110px 8vw; }.workspace-board { min-height:520px; }.platform-shell .developer-comet-field { min-height:460px; }.platform-shell .team-section { padding:110px 8vw; } }
 @media (max-width:600px) { .platform-shell .hero-section { padding:120px 7vw 60px; }.platform-hero .hero-copy h1 { font-size:58px; }.platform-hero .hero-visual { min-height:430px; }.hero-proof { gap:10px; flex-direction:column; }.platform-shell .journey-section { padding:105px 8vw; }.workspace-board { padding:17px; min-height:470px; }.workspace-orbit { min-height:270px; }.orbit-chip { padding:7px 8px; font-size:8px; }.signal-grid { grid-template-columns:1fr; }.board-footer { align-items:flex-start; flex-direction:column; gap:8px; }.platform-shell .section-intro h2,.platform-shell .people-copy h2,.platform-shell .team-intro h2,.workspace-copy h2 { font-size:50px; } }
+
+
+/* Lifecycle field refinement */
+.field-state-badge { position:fixed; z-index:4; left:4vw; bottom:28px; display:flex; align-items:center; gap:8px; color:rgba(188,205,235,.72); font:9px 'DM Mono'; letter-spacing:.1em; text-transform:uppercase; pointer-events:none; }
+.field-state-dot { width:6px; height:6px; border-radius:50%; background:#9dffcf; box-shadow:0 0 13px rgba(157,255,207,.9); animation:field-state-breathe 2.8s ease-in-out infinite; }
+.platform-shell .hero-copy h1 em { color:#c8b5ff; }
+.platform-shell .workspace-copy h2 em { color:#d4c3ff; }
+.platform-shell .hero-proof { color:#9aa8c4; }
+.platform-shell .team-intro>p:not(.eyebrow) { max-width:470px; }
+@keyframes field-state-breathe { 0%,100% { opacity:.55; transform:scale(.85); } 50% { opacity:1; transform:scale(1.15); } }
+@media (max-width:600px) { .field-state-badge { left:7vw; bottom:20px; } }

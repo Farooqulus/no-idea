@@ -16,6 +16,7 @@ The landing page presents that journey as a navigable 3D galaxy rather than a co
   - Scroll-aware galaxy geometry and star particles.
   - Pointer parallax and drag-to-move interaction.
 - Interactive project orbit that visualizes a brief, collaborators, research, and the next move.
+- Unified particle field that shifts through four product states: open field, shaping, connecting, and refining.
 - Ambient space soundscape controlled by the user:
   - Deep space nebula drone.
   - Pulsar beat.
@@ -105,6 +106,13 @@ The audio control cycles through the available ambient presets. Audio is intenti
 The soundscape is generated with the Web Audio API and does not require an external audio file.
 
 ### Project orbit
+
+The background field follows the user journey without turning the interface into a dashboard:
+
+- **Open field:** a quiet, low-opacity constellation for the starting point.
+- **Shaping:** a denser cluster as an idea is being clarified.
+- **Connecting:** tighter particles and lightweight links as people gather around the work.
+- **Refining:** a cooler cyan/green shift for feedback, review, and the next decision.
 
 - Explore the shared-context orbit in the Workspace section.
 - Use the shared camera mode control to orbit, zoom, and pan through the galaxy.
