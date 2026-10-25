@@ -2,7 +2,7 @@
 
 **NO IDEA** is an interactive workspace for turning unfinished thoughts into validated projects, finding the right collaborators, and building together.
 
-The landing page presents that journey as a navigable 3D idea universe rather than a conventional marketing page. It combines React, Three.js, React Three Fiber, animated spatial objects, developer constellations, and a black-hole-inspired idea ecosystem.
+The landing page presents that journey as a navigable 3D galaxy rather than a conventional marketing page. It combines React, Three.js, React Three Fiber, animated nebula clouds, reactive particles, developer constellations, and a shared project orbit.
 
 ## Highlights
 
@@ -11,16 +11,17 @@ The landing page presents that journey as a navigable 3D idea universe rather th
 - Scroll-aware landing sections for the idea journey, ecosystem, people, and team.
 - Interactive Rover assistant orb with state transitions.
 - Developer constellation with touch-friendly selection and animated comet-like objects.
-- Black-hole ecosystem object with:
-  - Gravitational lensing glow and distortion layers.
-  - Animated accretion disk and plasma particles.
-  - Click-to-absorb particle streams.
+- Reactive galaxy background with:
+  - Layered nebula clouds and additive glow.
+  - Scroll-aware galaxy geometry and star particles.
+  - Pointer parallax and drag-to-move interaction.
+- Interactive project orbit that visualizes a brief, collaborators, research, and the next move.
 - Ambient space soundscape controlled by the user:
   - Deep space nebula drone.
   - Pulsar beat.
   - Cosmic winds.
   - Sound off.
-- Guided and free-flight camera modes for the universe and black-hole scenes.
+- Guided and free-flight camera modes for the universe and collaboration orbit.
 - Responsive layout for desktop and mobile screens.
 - Team cards with LinkedIn links and contribution details.
 - Authenticated product routes for ideas, workspaces, Rover, developers, agreements, and notifications.
@@ -103,11 +104,11 @@ The audio control cycles through the available ambient presets. Audio is intenti
 
 The soundscape is generated with the Web Audio API and does not require an external audio file.
 
-### Ecosystem black hole
+### Project orbit
 
-- Hover or touch the event horizon to intensify the lensing response.
-- Click the black hole to pull the surrounding particles into its center.
-- Use the shared camera mode control to orbit, zoom, and pan around the object.
+- Explore the shared-context orbit in the Workspace section.
+- Use the shared camera mode control to orbit, zoom, and pan through the galaxy.
+- Select workflow steps to change the active field and visual emphasis.
 
 ### People and team
 
@@ -120,12 +121,11 @@ The soundscape is generated with the Web Audio API and does not require an exter
 client/
   src/
     components/
-      BlackHoleObject.tsx       # Lensing black-hole scene and particle absorption
       DeveloperConstellation.tsx# Interactive developer comet field
       IdeaUniverse.tsx           # Hero 3D idea universe
       PageTransition.tsx         # Route/page transition wrapper
       RoverOrb.tsx               # Floating Rover assistant orb
-      SpaceField.tsx             # Global star field, geometry, audio, camera controls
+      SpaceField.tsx             # Galaxy, nebula, audio, and camera controls
     pages/
       Home.tsx                   # Interactive landing page
       Developers.tsx             # Developer discovery page
